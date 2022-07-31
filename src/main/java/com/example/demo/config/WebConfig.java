@@ -8,7 +8,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * @author ZDL
  * @ClassName WebConfig
- * @description: TODO
  * @datetime 2022年 07月 28日 23:39
  * @version: 1.0
  */

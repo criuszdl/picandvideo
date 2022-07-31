@@ -12,7 +12,6 @@ import java.net.UnknownHostException;
 /**
  * @author ZDL
  * @ClassName IpUtil
- * @description: TODO
  * @datetime 2022年 07月 31日 15:02
  * @version: 1.0
  */

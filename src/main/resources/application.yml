@@ -1,13 +1,25 @@
 spring:
   servlet:
     multipart:
+      max-request-size: 20MB
       max-file-size: 20MB
+
   # 以下两个配置会映射访问地址 file:xxx 为 image2 ，某些时候会失效，比如项目中有过滤器；另外yml配置，会使静态资源发文路径失效。
-  mvc:
-    static-path-pattern: /image2/**
-  web:
-    resources:
-      static-locations: file:E:/CodeSongs/picandvideo/src/main/resources/static/upload/
+  # 比如 static下边的两个html页面无法访问。
+  devtools:
+    restart:
+      enabled: true  #开启热部署
+      additional-paths: src/main/java   #重启目录
+#  mvc:
+#    static-path-pattern: /image2/**
+#  web:
+#    resources:
+#      static-locations: file:E:/CodeSongs/picandvideo/src/main/resources/static/upload/
 win:
-  base-path: /src/main/resources/static/upload
+  base-path:
+    photo: /src/main/resources/static/upload/photo/
+    video: /src/main/resources/static/upload/video/
+
+server:
+  port: 8080
 

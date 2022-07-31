@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>文件预览</h1>
+<!-- 只不过后端返回时候，没有加一些响应头参数 -->
+<!--<a href="/preview/photo?fileName=101214.jpg">预览101214.jpg</a>-->
+<a href="/static/101215.jpg">预览101215.jpg</a>
+<!--<a href="/preview/video?fileName=33321.mp4">预览33321.mp4</a>-->
+
+<img src="/preview/photo?fileName=101214.jpg" alt="kiss"/>
+<img src="/preview/photo/2?fileName=101215.jpg" alt="view"/>
+<video class="videoContent" controls poster="upload/photo/101214.jpg">
+    <source src="/preview/video/2?fileName=33321.mp4" type="video/mp4"/>
+</video>
+</body>
+</html>

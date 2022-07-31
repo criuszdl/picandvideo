@@ -77,7 +77,6 @@ public class FilePreviewController {
         //获取当前ip
         IpUtil ipUtil = new IpUtil();
         System.out.println(ipUtil.getIp());
-        System.out.println(ipUtil.getPort());
         //获取端口号
         //查询当前地址下的文件
         String ultimatePath = ipUtil.getIp() +":"+ port + "/static/" + fileName;

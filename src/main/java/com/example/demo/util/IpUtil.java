@@ -1,5 +1,8 @@
 package com.example.demo.util;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.EnvironmentAware;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 import javax.annotation.Resource;
@@ -15,9 +18,6 @@ import java.net.UnknownHostException;
  */
 public class IpUtil {
 
-    @Resource
-    Environment environment;
-
     /**
     * @Description 获取ip
     * @param
@@ -31,20 +31,6 @@ public class IpUtil {
             e.printStackTrace();
         }
         return address;
-    }
-
-    /**
-    * @Description 获取端口号
-    * @param
-    * @return java.lang.String
-    */
-    public String getPort(){
-        String port ="";
-        try {
-            port = environment.getProperty("server.port");
-        } catch (Exception e) {
-        }
-        return port;
     }
 
 }
